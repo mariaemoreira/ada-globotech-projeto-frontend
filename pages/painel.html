@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <title>Lista de Tarefas - Painel</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="./painel.html">Home</a></li>
+            <li><a href="./listas.html">Minhas listas</a></li>
+            <li><a href="./../index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-painel">
+
+        <section class="criar-lista-ou-tarefa">
+            <form>
+            <!--Permite ao usuário criar uma nova lista de tarefas ou adicionar uma tarefa a uma lista existente-->
+                <fieldset>
+                    <legend>
+                        Criar uma lista
+                    </legend>
+                    <label for="criar-lista">Nome da lista: </label>
+                    <input name="criar-lista" type="text">
+                    <button type="submit">Criar lista</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Criar uma tarefa
+                    </legend>
+                    <label for="selecionar-lista">Selecione a lista em que deseja adicionar uma tarefa: </label>
+                    <br>
+                    <select id="selecionar-lista" name="listas">
+                        <option value="estudos">Materiais para estudar</option>
+                        <option value="compras">Lista de compras</option>
+                        <option value="contas">Contas a pagar</option>
+                    </select>
+                    <br>
+                    <label for="criar-tarefa">Insira a tarefa que deseja adicionar: </label>
+                    <br>
+                    <textarea name="criar-tarefa"></textarea>
+                    <br>
+                    <button type="submit">Criar tarefa</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <nav class="menu-lateral-listas">
+            <!--Permite ao usuário selecionar uma lista para visualizar. Por enquanto coloquei ela direcionando para a page Painel, que é onde aparecem todas as listas criadas pelo usuário, mas a ideia é que ela vá para a página e faça um scroll até a lista clicada-->
+            <h2>Acessar listas</h2>
+            <ul>
+                <li><a href="./listas.html#materiais-estudo">Materiais para estudar</a></li>
+                <li><a href="./listas.html#lista-compras">Lista de compras</a></li>
+                <li><a href="./listas.html#contas">Contas a pagar</a></li>
+            </ul>
+        </nav>
+        
+    </main>
+
+</body>
+</html>
