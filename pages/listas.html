@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <title>Lista de Tarefas - Minhas listas</title>
+</head>
+<body>
+    <header>
+        <h1>Minhas listas</h1>
+    </header>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="./painel.html">Home</a></li>
+            <li><a href="./listas.html">Minhas listas</a></li>
+            <li><a href="./../index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="listas-usuario">
+            <!--Organizacão das listas de tarefas do usuário. Cada lista criada é um formulário, sendo as tarefas inputs do tip checkbox-->
+
+            <form class="lista">
+
+                <fieldset id="materiais-estudo">
+                    <legend>
+                        Materiais para estudar
+                    </legend>
+                    <input name="python" type="checkbox">
+                    <label for="python">Python</label>
+                    <br>
+                    <input name="banco-dados" type="checkbox">
+                    <label for="banco-dados">Bancos de Dados</label>
+                    <br>
+                    <input name="html" type="checkbox">
+                    <label for="html">HTML</label>
+                    <br>
+                    <input name="CSS" type="checkbox">
+                    <label for="CSS">CSS</label>
+                    <br>
+                    <input name="JS" type="checkbox">
+                    <label for="JS">Java Script</label>
+                    <br>
+                    <input name="redes" type="checkbox">
+                    <label for="redes">Redes</label>
+                    <br>
+                    <input name="aws" type="checkbox">
+                    <label for="aws">Provisionamento como código - AWS</label>
+                </fieldset>
+
+                <fieldset id="lista-compras">
+                    <legend>
+                        Lista de compras
+                    </legend>
+                    <input name="arroz" type="checkbox">
+                    <label for="arroz">Arroz</label>
+                    <br>
+                    <input name="feijao" type="checkbox">
+                    <label for="feijao">Feijão</label>
+                    <br>
+                    <input name="frutas" type="checkbox">
+                    <label for="frutas">Frutas</label>
+                    <br>
+                    <input name="legumes" type="checkbox">
+                    <label for="legumes">Legumes</label>
+                    <br>
+                    <input name="racao" type="checkbox">
+                    <label for="racao">Ração para o gato</label>
+                    <br>
+                    <input name="biscoitos" type="checkbox">
+                    <label for="biscoitos">Biscoitos</label>
+                    <br>
+                    <input name="detergente" type="checkbox">
+                    <label for="detergente">Detergente</label>
+                    <br>
+                    <input name="sabao-em-po" type="checkbox">
+                    <label for="sabao-em-po">Sabão em pó</label>
+                    <br>
+                </fieldset>
+
+                <fieldset id="contas">
+                    <legend>
+                        Contas a pagar
+                    </legend>
+                    <input name="fatura-cartao" type="checkbox">
+                    <label for="fatura-cartao">Fatura do cartão de crédito</label>
+                    <br>
+                    <input name="luz" type="checkbox">
+                    <label for="luz">Conta de luz</label>
+                    <br>
+                    <input name="agua" type="checkbox">
+                    <label for="agua">Água</label>
+                    <br>
+                    <input name="internet" type="checkbox">
+                    <label for="internet">Internet</label>
+                    <br>
+                    <input name="condominio" type="checkbox">
+                    <label for="condominio">Condomínio</label>
+                </fieldset>
+
+            </form>
+
+        </section>
+        
+    </main>
+
+</body>
+</html>
